@@ -9,16 +9,27 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
 <script type="text/javascript" async  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
- <style>
+<style>
 
 
 body {
     font-family: Arial;
     margin:0;
     background-color:#f2f2f2;
-    text-align:justify;
 }
-     
+
+p{
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+}
+
+h3{
+    text-align:left;
+}
+
 .container{margin-left: 10px; margin-top: 10px; padding-top: 20px;}
 
 .button {
@@ -208,11 +219,6 @@ p.submain{font-size: 30px;margin:1px;}
 
     }
     
-
-
-
-
-
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/x-mathjax-config">
@@ -236,13 +242,15 @@ function gototop() {
     document.documentElement.scrollTop = 0;
 }
 </script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
         <button onclick="gototop()" id="scrltop" title="Back to top"><i class="fa fa-chevron-up" style="font-size:35px;"></i></button>
     <div class="container content">
         <h2>Свет как электромагнитная волна</h2>         
             <div class="container">
-            <img src="https://etpbntu.github.io/images/EM_spectrum.svg"  alt="EMs"style="max-width:700px">
+            <img src="https://etpbntu.github.io/images/EM_spectrum.svg"  alt="EMs"style="width:100%;max-width:700px">
             <div class="container center">
               <p><i>Спектр электромагнитного излучения</i></p>
             </div>
@@ -259,15 +267,9 @@ function gototop() {
        
          <p><b>Электромагнитная волна</b> – колебания напряженности электрического и магнитного полей, распространяющиеся в пространстве с конечной скоростью. </p>
          
-            <div class="container center formula-l" style="width:90%">
-            <img src="https://etpbntu.github.io/images/EM-1.png" class="center" alt="EMs" style="width:550px">
-            <div class="container center">
-              <p><i>Плоская электромагнитная волна</i></p>
-            </div>
-            </div>
-            <div class="formula-s">
-            <img src="https://etpbntu.github.io/images/EM-1.png" alt="EMs" style="width:100%">
-            <div class="container center">
+            <div class="container" style="width:90%">
+            <img src="https://etpbntu.github.io/images/EM-1.png" class="center" alt="EMs" style="max-width:550px">
+            <div class="container">
               <p><i>Плоская электромагнитная волна</i></p>
             </div>
             </div>
@@ -276,12 +278,12 @@ function gototop() {
                 1) факт существования электромагнитных волн,<br>                              
                 2) распространение электромагнитных волн в вакууме с конечной скоростью,
             </p>		
-            <div class="  round-large formula-l">	
+            <div class="formula-l">	
                 \begin{equation} 
                     c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}}
                 \end{equation}
             </div>
-            <div class="  round-large formula-s">	
+            <div class=" formula-s">	
         \(
                     c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}}
         \)
@@ -289,12 +291,12 @@ function gototop() {
             <p >
                 3) распространение электромагнитных волн в однородной изотропной среде со скоростью 
             </p>
-            <div class="  round-large formula-l">
+            <div class=" formula-l">
                      \begin{equation} 
                          v = \frac{c}{n}, n=\sqrt{\varepsilon \mu}, \mu=1, n=\sqrt{\varepsilon}
                     \end{equation}
             </div>
-            <div class="  round-large formula-s">
+            <div class=" formula-s">
          
                          \(v = \frac{c}{n}, n=\sqrt{\varepsilon \mu},\) \( \mu=1, n=\sqrt{\varepsilon}\)
          
@@ -304,15 +306,15 @@ function gototop() {
             </p>
         </div>
          
-        <h3><b>Плоская</b> <b class="formula-l">монохроматическая </b><b>волна</b></h3>
+        <h3>Плоская монохроматическая волна</h3>
         <div>
                 <p >Напряженность электрического поля такой волны описывается выражением:</p>
-                    <div class="  round-large formula-l">
+                    <div class=" formula-l">
                          \begin{equation} 
                             \vec{E}(\vec{r},t)=\vec{E}_0 \cos (\omega t -kz +\phi_0)
                         \end{equation}
                     </div>
-                    <div class="  round-large formula-s">
+                    <div class=" formula-s">
         \(
                             \vec{E}(\vec{r},t)=\vec{E}_0 \cos (\omega t -kz +\phi_0)
         \)
@@ -320,12 +322,12 @@ function gototop() {
                     <p >           
                         – волна распространяется вдоль оси z,
                     </p>
-                    <div class="  round-large formula-l">
+                    <div class=" formula-l">
                          \begin{equation} 
                             \vec{E}(\vec{r},t)=\vec{E}_0 \cos (\omega t -k\vec{n}\vec{r} +\phi_0)
                         \end{equation}
                     </div>
-                    <div class="  round-large formula-s">
+                    <div class=" formula-s">
         \(
                             \vec{E}(\vec{r},t)=\vec{E}_0 \cos (\omega t -k\vec{n}\vec{r} +\phi_0)
         \)
@@ -334,17 +336,17 @@ function gototop() {
                     <p >
                     – волна распространяется в направлении, задаваемом вектором \( \vec{k} \). Здесь \( \vec{k} = k \vec{n} =\frac{2 \pi}{\lambda} \vec{n}\)  – волновой вектор, длина которого равна волновому числу, а направление совпадает с направлением распространения волны (т.е. с нормалью к волновому фронту).
                     В комплексном виде </p>
-                    <div class="  round-large formula-l">
+                    <div class=" formula-l">
                          \begin{equation} 
                             \vec{E}(z,t)=\vec{E}_0 \exp [i(\omega t -kz +\phi_0)]
                         \end{equation}
                     </div>
-                    <div class="  round-large formula-s">
+                    <div class=" formula-s">
         \(
                             \vec{E}(z,t)=\vec{E}_0 \exp [i(\omega t -kz +\phi_0)]
         \)
                     </div>
-                <h5>Параметры плоской  монохроматической волны</h5>
+                <h3>Параметры плоской монохроматической волны</h3>
                 <p > \( \vec{E}_0 \) – амплитуда волны, в общем случае, комплексная.<br>
                     \(  (\omega t -kz +\phi_0)\) — фаза волны,<br>
                     \(  \phi_0 \) – начальная фаза волны,<br>
@@ -360,20 +362,20 @@ function gototop() {
                 </p>
         </div>
          
-        <h3><b>Свойства плоской</b><b class="formula-l"> монохроматической</b><b> волны</b></h3>
+        <h3>Свойства плоской  монохроматической волны</h3>
         <div>
-                <p >
+                <p>
                     1. <b>Волна монохроматическая</b> – колебания напряженностей электрического и магнитного полей происходят на одной частоте, т.е гармонические (по закону sin, cos).<br>
                     2. <b>Волна плоская</b> – волновая поверхность (поверхность равных фаз, или поверхность постоянной фазы) – плоскость, т.е. удовлетворяет уравнению плоскости: z=const (в общем случае  \( \vec{k}\vec{r} = const\)). Волновой фронт – это волновая поверхность на границе между возмущенной и невозмущенной частью пространства.<br>
                    </p>
                 <div class="container ">
-            <div class="container  formula-l">
-            <img src="https://etpbntu.github.io/images/EM4.PNG" alt="EMs" style="max-width:380px">
+            <div class="container">
+            <img src="https://etpbntu.github.io/images/EM4.PNG" alt="EMs" style=" width:100%;max-width:380px">
             <div class="container center">
               <p><i>Плоская электромагнитная волна</i></p>
             </div>
             </div>
-            <div class="container   formula-l">
+            <div class="container">
             <img src="https://etpbntu.github.io/images/EM3.PNG" alt="EMs" style="max-width:250px">
             <div class="container center">
               <p><i>Сферическая электромагнитная волна</i></p>
@@ -388,12 +390,12 @@ function gototop() {
                     5. <b>Связь между векторами \(\vec{E} \) и \(\vec{H} \) – синфазность колебаний этих векторов</b>;<br>
                     6. <b>Связь между амплитудами векторов \(\vec{E} \) и \(\vec{H} \):</b>
                 </p>
-                <div class="  round-large formula-l">
+                <div class=" formula-l">
                            \begin{equation} 
                             E_0=\sqrt{\frac{\mu \mu_0}{\varepsilon \varepsilon_0}} H_0
                         \end{equation}
                 </div>
-                <div class="  round-large formula-s">
+                <div class=" formula-s">
         \(
                             E_0=\sqrt{\frac{\mu \mu_0}{\varepsilon \varepsilon_0}} H_0
         \)
@@ -403,8 +405,8 @@ function gototop() {
                     <br>
             </p>
             <div class="container">
-            <div class="container   formula-l">
-            <img src="https://etpbntu.github.io/images/EM5.PNG" alt="EMs" style="max-width:500px">
+            <div class="container">
+            <img src="https://etpbntu.github.io/images/EM5.PNG" alt="EMs" style="width:100%;max-width:500px">
             <div class="container center">
               <p><i>Плоская электромагнитная волна: линейная и эллиптическая поляризации</i></p>
             </div>
@@ -413,12 +415,12 @@ function gototop() {
          <p>
         8. <b>Интенсивность плоской монохроматической волны пропорциональна квадрату ее амплитуды;</b>
         </p>
-            <div class="  round-large formula-l">
+            <div class=" formula-l">
                         \begin{equation} 
                             I \sim |E|^2
                         \end{equation}
                 </div>
-            <div class="  round-large formula-s">
+            <div class=" formula-s">
         \(
                             I \sim |E|^2
         \)
@@ -428,10 +430,10 @@ function gototop() {
           <br>
         </p>
          
-        <div class="container center" >
-            <div class="container formula-l">
-                <img src="https://etpbntu.github.io/images/EM6.PNG" alt="EMs" style="max-width:500px">
-                <div class="container center">
+        <div class="container" >
+            <div class="container">
+                <img src="https://etpbntu.github.io/images/EM6.PNG" alt="EMs" style="width:100%;max-width:500px">
+                <div class="container">
                     <p><i>Сферическая и плоская электромагнитные волны</i></p>
                 </div>
         </div>
@@ -441,7 +443,7 @@ function gototop() {
         10.  <b>Почему для описания светового поля используется вектор \(\vec{E} \), а не \(\vec{H} \)?</b> <br>
         Выражение интенсивности света через вектор \(\vec{E} \) , а не  \(\vec{H} \), имеет физический смысл. Сравним действие электрического и магнитного полей на заряд q, опреде-ляемого силами Лоренца: силой электрического поля  \(\vec{F}_{el} = q \vec{E}\) и магнитного поля – \(\vec{F}_{mag} = q [\vec{v}_q,\vec{B}]\) , где \(\vec{v}_q\) - скорость движения заряда, а \(\vec{B}\) вектор индукции магнитного поля.
         </p>
-         <div class="  round-large formula-l ">
+         <div class=" formula-l ">
             \begin{equation} 
                             \frac{F_{el}}{F_{mag}} = \frac{q E}{q v_q B \sin{\pi/2}} = 
                             = \frac{E}{v_q \mu \mu_0 H} = \frac{1}{v_q}\sqrt{\frac{1}{\mu \mu_0 \varepsilon \varepsilon_0}} \\
@@ -451,7 +453,7 @@ function gototop() {
                    </div> 
 
          
-        <div class="  round-large formula-s">
+        <div class=" formula-s">
                         \( \frac{F_{el}}{F_{mag}} = \frac{q E}{q v_q B \sin{\pi/2}} = \) <br>
                             \( = \frac{E}{v_q \mu \mu_0 H} = \frac{1}{v_q}\sqrt{\frac{1}{\mu \mu_0 \varepsilon \varepsilon_0}} \)<br>
                            \( \frac{1}{v_q}\sqrt{\frac{1}{\mu \mu_0 \varepsilon \varepsilon_0}} = \frac{1}{v_q \sqrt{\mu \mu_0} \sqrt{\varepsilon \varepsilon_0}} \) <br>
@@ -461,8 +463,8 @@ function gototop() {
             <p> где  \(v\) - фазовая скорость волны. </p>
          
          
-            <div class="container   formula-l">
-            <img src="https://etpbntu.github.io/images/EM7.PNG" alt="EMs" style="max-width:400px">
+            <div class="container">
+            <img src="https://etpbntu.github.io/images/EM7.PNG" alt="EMs" style="width:100%;max-width:400px">
             <div class="container center">
               <p><i>Силы, действующие на электрон в поле электромагнитной волны</i></p>
             </div>
@@ -475,12 +477,12 @@ function gototop() {
         <div>
                 <p>
                    Напряженность электрического поля сферической волны описывается выражением: </p>
-            <div class="  round-large formula-l">
+            <div class=" formula-l">
                          \begin{equation} 
                            \vec{E}(r,t)=\frac{\vec{E}_0}{r}\cos{(wt-kr+\varphi_0)}
                        \end{equation} 				
                 </div>
-            <div class="  round-large formula-s">
+            <div class=" formula-s">
          \( 
                            \vec{E}(r,t)=\frac{\vec{E}_0}{r}\cos{(wt-kr+\varphi_0)}
         \)		
